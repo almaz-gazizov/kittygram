@@ -20,9 +20,9 @@ services:
       - static:/backend_static
       - media:/app/media
   frontend:
-    env_file: .env
     image: almazgazizov/kittygram_frontend
-    command: cp -r /app/build/. /static/
+    env_file: .env
+    command: cp -r /app/build/. /frontend_static/
     volumes:
       - static:/frontend_static
   gateway:
