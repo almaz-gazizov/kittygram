@@ -151,4 +151,4 @@ media/
 # Others
 node_modules
 
-kittygram_final/docker-compose.yml
+docker-compose.yml
